@@ -1,0 +1,51 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #797878;
+}
+
+/* Ensure full viewport height and centering */
+.login-section {
+  min-height: 100vh;
+}
+
+ 
+/* Image and form responsiveness */
+.img-fluid {
+  max-width: 80%;
+  height: auto;
+}
+
+.form-control-lg {
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+    
+    .login-section {
+      padding: 2rem;
+    }
+  
+    /* Smaller font size for input and button */
+    .form-control-lg {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    .btn-lg {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  
+    /* Adjust image and form layout for small screens */
+    .row {
+      flex-direction: column;
+    }
+  
+    .col-md-6 {
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
